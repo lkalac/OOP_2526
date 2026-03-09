@@ -5,6 +5,14 @@ public class AppTest {
         Student s1 = new Student("Petar","Petrić", 12);
         Student s2 = new Student("Franka", "Frankič", 43);
         s1.subscribeToStudentService();
+        s2.subscribeToStudentService();
+        System.out.println(s1);
+        Hlace h1 = new Hlace("levis 501");
+        h1.koristeneHlace();
+        Hlace h2;
+        h2=h1.nekakoOciscene(s1);
+        System.out.println(h1);
+        System.out.println(h2);
 
     }
 }
